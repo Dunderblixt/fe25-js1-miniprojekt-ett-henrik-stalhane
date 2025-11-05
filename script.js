@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const rader = 4;
-	const fontSize = 14;
+	const fontSize = 10;
 	const bigger = 5;
-	const startRGB = { r: 40, g: 221, b: 222 };
+	const startRGB = { r: 35, g: 226, b: 222 };
 	const colorStep = 40; 
 	const container = document.getElementById('rows') || (() => {
 		const el = document.createElement('div');
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         p.style.textAlign = 'center';
 		p.textContent = `Rad ${i+1}`;
         p.style.color = '#7f60f1ff';
-		p.style.fontSize = `${fontSize + (i - 1) * bigger}px`;
+		p.style.fontSize = `${fontSize + (i) * bigger}px`;
 		p.style.margin = `${i} 0`;
 		p.style.padding = '0.125em 0.5em';
-		const r = Math.max(startRGB.r - (i - 1) * colorStep, 0);
-		const g = Math.max(startRGB.g - (i - 1) * colorStep, 0);
-		const b = Math.max(startRGB.b - (i - 1) * colorStep, 0);
+		const r = Math.max(startRGB.r - (i) * colorStep, 0);
+		const g = Math.max(startRGB.g - (i) * colorStep, 0);
+		const b = Math.max(startRGB.b - (i) * colorStep, 0);
 		p.style.backgroundColor = `rgb(${r},${g},${b})`;
 
 		container.appendChild(p);
@@ -113,5 +113,3 @@ document.addEventListener('DOMContentLoaded', () => {
     divTre.appendChild(listTre);
     box.appendChild(divTre);
 });
-
-
