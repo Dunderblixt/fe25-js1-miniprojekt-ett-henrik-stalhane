@@ -1,1 +1,1 @@
-# fe25-js1-slutprojekt-henrik-stalhane
+# fe25-js1-miniprojekt-ett-henrik-stalhane
