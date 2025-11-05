@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const box = document.createElement('div');
     box.style.border = '2px solid black';
     box.style.display = 'flex';
-    box.style.padding = '16px';
+    box.style.padding = '48px';
     box.style.justifyContent = 'space-around';
     container.appendChild(box);
 	const divEtt = document.createElement('div');
@@ -113,3 +113,4 @@ document.addEventListener('DOMContentLoaded', () => {
     divTre.appendChild(listTre);
     box.appendChild(divTre);
 });
+
