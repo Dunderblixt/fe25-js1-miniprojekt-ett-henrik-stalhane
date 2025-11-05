@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         siffernamn.textContent = String(sifferord[n]);
         siffernamn.style.margin = '0 0';
         listTre.appendChild(siffernamn);   
-                if ( n === 6 ) {
+                if ( n === 5 ) {
             siffernamn.style.backgroundColor = '#5262f8ff';
         }
         else if (n % 2 === 0) {
@@ -113,4 +113,5 @@ document.addEventListener('DOMContentLoaded', () => {
     divTre.appendChild(listTre);
     box.appendChild(divTre);
 });
+
 
